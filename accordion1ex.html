@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Accordion Option Menu Demo</title>
+  <style>
+    body{
+      background-color:#737373;
+    }
+    #option_menu{
+      background-color:#006666;
+      font-family:verdana;
+      color:white;
+      width:25%;
+      height:100%;
+      position:fixed;
+      top:0px;
+      left:0px;
+    }
+    .option{
+      padding:15px;
+      margin:0px;
+    }
+    .option:hover;{
+      background-color:#004d4d;
+      cursor:pointer;
+    }
+    .accordion-content{
+      display:none;
+      background-color:#009999;
+    }
+    .accordion-head{
+      margin:0px;
+    }
+  </style>
+
+  <script>
+    function toggleAcc(unique_acc_id){     
+      var curElem = document.getElementById(unique_acc_id);
+      if (curElem.style.display == 'block'){
+         curElem.style.display = 'none';
+      }
+      else{
+         curElem.style.display = 'block';
+      }
+    }
+  </script>
+</head>
+<body>
+
+    <div id="option_menu">
+       <p class="option">Option 1</p>
+       <p class="option">Option 2</p>
+       <p class="option">Option 3</p>
+       <div class="accordion">
+          <p class="accordion-head option" onclick="toggleAcc('unique_acc_id');">Accordion</p>
+          <div class="accordion-content" id="unique_acc_id">
+             <p class="option">Accordion Content 1</p>
+             <p class="option">Accordion Content 2</p>
+             <p class="option">Accordion Content 3</p>
+             <p class="option">Accordion Content 4</p>
+          </div>
+       </div>
+       <p class="option">Option 4</p>
+       <p class="option">Option 5</p>  
+    </div>
+
+</body>
+</html>
