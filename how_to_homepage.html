@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>How To: HTML, CSS, and JS</title>
+  <style>
+    *{
+      font-size:16px;
+      font-family:verdana;
+    }
+    #main{
+      background-color:#e6e6e6;
+      width:96%;
+      margin-top:2%;
+      padding:20px;
+      border-radius:5px;
+      text-align:center;
+    }
+    #how-to-head{
+      color:#006666;
+      font-size:20px;
+      padding-bottom:15px;
+      border-bottom:2px solid #006666;
+    }
+    #links_div{
+      background-color:rgb(128, 128, 138);
+      padding:10px;
+      border-radius:5px;
+      width:90%;
+      margin:0 auto;
+    }
+    #links_div table{
+      width:100%;
+    }
+    #links_div table td{
+      width:33%;
+      color:rgb(179, 199, 199);
+      text-align:left;
+      text-decoration:underline;
+      margin-bottom:10px;
+      height:25px;     
+    }
+    #links_div table th{
+      text-align:left;
+    }
+    .how-to-subheader{
+      color:#ff6666;
+      font-size:25px;
+      margin-top:20px;
+    }
+    .info_div{
+      background-color:#cccccc;
+      padding:10px;
+      border-radius:5px;
+      margin:0 auto;
+      width:90%;
+      margin-top:40px;
+    }
+    .explan{
+      color:#333333;
+      text-align:justify;
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <p id="how-to-head"><b>HOW TO: <span style="color:#737373;font-size:20px;">HTML, CSS, and JS</span></b></p>
+    <div id="links_div">
+       <table>
+          <tr>
+             <th>
+               <p class="links_header">Elements</p>
+             </th>
+             <th>
+               <p class="links_header">Functions</p>
+             </th>
+             <th>
+               <p class="links_header">Tips and Tricks</p>
+             </th>
+          </tr>
+          <tr>
+             <td>Accordion</td>
+             <td>hasClass()</td>
+             <td>Building a "Modern" Page</td>
+          </tr>
+          <tr>
+             <td>Checkbox</td>
+             <td>filterOnInput()</td>
+             <td>Guide to using "display"</td>
+          </tr>
+          <tr>
+             <td>Hidable Option Menu</td>
+             <td></td>
+             <td>Responsive Pages</td>
+          </tr>
+       </table>
+        
+    </div> <!-- End links_div -->
+
+    <div class="info_div" id="accordion">
+      <p class="how-to-subheader" id="accordion">Accordion</p>
+      <p class="explan">An accordion is an element that is made of two parts: a header and some content. When the user clicks on the header, the content is displayed. The most common use of this is in an option menu, like the one you see below.<br>An accordion could also be called a dropdown--they both have very similar functions, though I believe the connotation behind a "dropdown" is that the content and header are independent divs. On the other hand, an accordion tends to contain both a header and a hidden content div. Below is another example of how an accordion can act.</p>
+    </div>
+  </div> <!-- End main -->
+</body>
+</html>
