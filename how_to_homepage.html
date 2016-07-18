@@ -16,6 +16,7 @@
       padding:20px;
       border-radius:5px;
       text-align:center;
+      margin-bottom:50px;
     }
     #how-to-head{
       color:#006666;
@@ -61,6 +62,11 @@
       color:#333333;
       text-align:justify;
     }
+    .top_of_page{
+      text-align:right;
+      color:#006666;
+      text-decoration:underline;
+    }
   </style>
 </head>
 <body>
@@ -80,12 +86,12 @@
              </th>
           </tr>
           <tr>
-             <td>Accordion</td>
+             <td onclick="document.getElementById('accordion').scrollIntoView(true);">Accordion</td>
              <td>hasClass()</td>
              <td>Building a "Modern" Page</td>
           </tr>
           <tr>
-             <td>Checkbox</td>
+             <td onclick="document.getElementById('checkbox').scrollIntoView(true);">Checkbox</td>
              <td>filterOnInput()</td>
              <td>Guide to using "display"</td>
           </tr>
@@ -99,9 +105,33 @@
     </div> <!-- End links_div -->
 
     <div class="info_div" id="accordion">
-      <p class="how-to-subheader" id="accordion">Accordion</p>
-      <p class="explan">An accordion is an element that is made of two parts: a header and some content. When the user clicks on the header, the content is displayed. The most common use of this is in an option menu, like the one you see below.<br>An accordion could also be called a dropdown--they both have very similar functions, though I believe the connotation behind a "dropdown" is that the content and header are independent divs. On the other hand, an accordion tends to contain both a header and a hidden content div. Below is another example of how an accordion can act.</p>
-    </div>
+      <p class="how-to-subheader">Accordion</p>
+      <p class="explan">An accordion is an element that is made of two parts: a header and some content. When the user clicks on the header, the content is displayed. The most common use of this is in an option menu, like the one you see below.</p>
+
+<div style="text-align:center;">
+<a href="https://jsbin.com/wizesivedu/1/edit?html,output">Accordion Example 1</a><br><br>
+</div>
+
+An accordion could also be called a dropdown--they both have very similar functions, though I believe the connotation behind a "dropdown" is that the content and header are independent divs. On the other hand, an accordion tends to contain both a header and a hidden content div. Below is another example of how an accordion can act.</p>
+
+<a href="https://jsbin.com/ceramekuho/1/edit?html,output">Accordion Example 2</a>
+<div class="top_of_page"><p onclick="document.getElementById('main').scrollIntoView(true);">Top of the Page</p></div>
+</div> <!-- End accordion div -->
+
+    <div class="info_div" id="checkbox">
+      <p class="how-to-subheader">Checkbox</p>
+      <p class="explan">You could use the default checkbox input and just leave it at that, but there is a way to customize checkbox inputs a bit more. W3 CSS does something very similar, but this is an example of how you can manually change the size of the box and the color of the text when clicked. The idea is pretty simple:<br><br>
+        <ul style="text-align:left">
+          <li>Create a checkbox input</li>
+          <li>Create a label, and add the attribute for="checkbox_id"</li>
+          <li>Pass the labelID in a function called toggleCheckbox(ID)</li>
+          <li>Manipulate the CSS for both the input and text in that function</li>
+        </ul>
+      <p>Here's an example: </p>
+      <a href="">Checkbox Example</a>
+      <div class="top_of_page"><p onclick="document.getElementById('main').scrollIntoView(true);">Top of the Page</p></div>
+</p></div> <!-- End accordion -->
+
   </div> <!-- End main -->
 </body>
 </html>
